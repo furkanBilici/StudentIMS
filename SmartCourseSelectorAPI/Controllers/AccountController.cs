@@ -41,7 +41,7 @@ namespace SmartCourseSelectorWeb.Controllers
                 }
                 else
                 {
-                    ViewBag.Message = "Yanlış kullanıcı adı, şifre, yada seçim.";
+                    ViewBag.Message = "Incorrect username, password, or role.";
                 }
             }
             return View(model);
@@ -71,11 +71,11 @@ namespace SmartCourseSelectorWeb.Controllers
                     // Şifre sıfırlama bağlantısını e-posta ile gönder
                     // (Burada e-posta göndermek için bir hizmet kullanılabilir)
 
-                    ViewBag.Message = "Şifre sıfırlama linki gönderildi.";
+                    ViewBag.Message = "The link has been sent to your address.";
                 }
                 else
                 {
-                    ViewBag.Message = "Email adresiniz kayıtlı değil.";
+                    ViewBag.Message = "Cannot found the adress.";
                 }
             }
             return View(model);
