@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ims.DataAccess", "Ims.DataAccess\Ims.DataAccess.csproj", "{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ims.Entities", "Ims.Entities\Ims.Entities.csproj", "{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
