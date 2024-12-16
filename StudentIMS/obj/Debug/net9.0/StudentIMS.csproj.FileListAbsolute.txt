@@ -104,3 +104,5 @@ C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net
 C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net9.0\StudentIMS.pdb
 C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net9.0\StudentIMS.genruntimeconfig.cache
 C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net9.0\ref\StudentIMS.dll
+C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net9.0\StudentIMS.csproj.AssemblyReference.cache
+C:\Users\musap\Desktop\VeriTabanıBYSProject\StudentIMS\StudentIMS\obj\Debug\net9.0\StudentIMS.MvcApplicationPartsAssemblyInfo.cs

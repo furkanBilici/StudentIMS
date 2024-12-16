@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace StudentIMS.Pages
+namespace StudentIMS.View.Account
 {
     public class PrivacyModel : PageModel
     {
