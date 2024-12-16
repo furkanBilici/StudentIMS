@@ -3,36 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\errorviewcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\errorviewcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\forgotpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\transcript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\ims.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\ims.entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.entities\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87F05AD8-3B5F-4689-9DF2-E7CFFFD89F15}|Ims.Entities\\Ims.Entities.csproj|solutionrelative:ims.entities\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}|Ims.DataAccess\\Ims.DataAccess.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\ims.dataaccess\\imsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{527E538B-DDCF-44ED-8BAE-5EB15A2212EB}|Ims.DataAccess\\Ims.DataAccess.csproj|solutionrelative:ims.dataaccess\\imsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\studentcourseselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:models\\advisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\studentims.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:studentims.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|c:\\users\\musap\\desktop\\veritaban\u0131bysproject\\studentims\\studentims\\view\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DDE63F41-DE56-4060-9FDB-8A80EC6D9B8E}|StudentIMS.csproj|solutionrelative:view\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,109 +90,271 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorViewcs.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ErrorViewcs.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewcs.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ErrorViewcs.cs",
+              "RelativeToolTip": "Models\\ErrorViewcs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:41:45.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForgotPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ForgotPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ForgotPasswordViewModel.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ForgotPasswordViewModel.cs",
+              "RelativeToolTip": "Models\\ForgotPasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:40:58.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:39:47.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transcript.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Transcript.cs",
+              "RelativeDocumentMoniker": "Models\\Transcript.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Transcript.cs",
+              "RelativeToolTip": "Models\\Transcript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:38:20.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:37:18.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:35:11.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentCourseSelection.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\StudentCourseSelection.cs",
+              "RelativeDocumentMoniker": "Models\\StudentCourseSelection.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\StudentCourseSelection.cs",
+              "RelativeToolTip": "Models\\StudentCourseSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:34:24.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:32:28.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Advisor.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Advisor.cs",
+              "RelativeDocumentMoniker": "Models\\Advisor.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\Advisor.cs",
+              "RelativeToolTip": "Models\\Advisor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:31:59.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T19:28:20.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentIMS",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\StudentIMS.csproj",
+              "RelativeDocumentMoniker": "StudentIMS.csproj",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\StudentIMS.csproj",
+              "RelativeToolTip": "StudentIMS.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-16T19:27:49.016Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginUser.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\LoginUser.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\LoginUser.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\LoginUser.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\LoginUser.cs",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:35:28.059Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-16T19:27:42.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentCourseSelection.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\StudentCourseSelection.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\StudentCourseSelection.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\StudentCourseSelection.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\StudentCourseSelection.cs",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:07:26.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Course.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\Course.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Course.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:07:06.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\User.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\User.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:06:42.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Advisor.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Advisor.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\Advisor.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Advisor.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\Advisor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:06:26.767Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-16T19:27:37.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ims.Entities.csproj",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Ims.Entities.csproj",
-              "RelativeDocumentMoniker": "Ims.Entities\\Ims.Entities.csproj",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Ims.Entities.csproj",
-              "RelativeToolTip": "Ims.Entities\\Ims.Entities.csproj",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "View\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "View\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-12T20:05:13.832Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:31.753Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Student.cs",
-              "RelativeDocumentMoniker": "Ims.Entities\\Model\\Student.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.Entities\\Model\\Student.cs",
-              "RelativeToolTip": "Ims.Entities\\Model\\Student.cs",
+              "DocumentIndex": 14,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "View\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "View\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:04:56.955Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:14:26.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImsDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.DataAccess\\ImsDbContext.cs",
-              "RelativeDocumentMoniker": "Ims.DataAccess\\ImsDbContext.cs",
-              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\Ims.DataAccess\\ImsDbContext.cs",
-              "RelativeToolTip": "Ims.DataAccess\\ImsDbContext.cs",
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "View\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\_ViewImports.cshtml",
+              "RelativeToolTip": "View\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T20:03:53.472Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:27.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "View\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\_ViewStart.cshtml",
+              "RelativeToolTip": "View\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:26.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "View\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Privacy.cshtml",
+              "RelativeToolTip": "View\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:24.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Index.cshtml",
+              "RelativeDocumentMoniker": "View\\Index.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Index.cshtml",
+              "RelativeToolTip": "View\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:23.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Error.cshtml",
+              "RelativeDocumentMoniker": "View\\Error.cshtml",
+              "ToolTip": "C:\\Users\\musap\\Desktop\\VeriTaban\u0131BYSProject\\StudentIMS\\StudentIMS\\View\\Error.cshtml",
+              "RelativeToolTip": "View\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T19:21:20.973Z",
+              "EditorCaption": ""
             }
           ]
         },
