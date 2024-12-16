@@ -7,7 +7,7 @@
         public string PasswordHash { get; set; }
         public string Role { get; set; }
         public int? RelatedID { get; set; }
-        public string Email { get; set; } // Email alanını ekleyin
+        public string Email { get; set; } 
 
     }
 }

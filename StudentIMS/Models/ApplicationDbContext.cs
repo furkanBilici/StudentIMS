@@ -8,12 +8,13 @@ namespace StudentIMS.Models
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<User> Users { get; set; }
         public DbSet<Advisor> Advisors { get; set; }
-        public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourseSelection> StudentCourseSelections { get; set; }
         public DbSet<Transcript> Transcripts { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Student> Students { get; set; }
+     
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
