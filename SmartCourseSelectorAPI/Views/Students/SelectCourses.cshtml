@@ -1,4 +1,4 @@
-﻿@model SmartCourseSelectorWeb.Models.Student
+﻿@model IEnumerable<SmartCourseSelectorWeb.Models.Course>
 
 @{
     ViewData["Title"] = "Course Selection";
@@ -59,43 +59,11 @@
             background-color: #0056b3;
         }
 </style>
-<a href="https://localhost:7199/Account/LoginUser" class="back-link">Logout</a>
-<div class="container content-container">
-    <div class="student-info">
-        <h2>Course Selection</h2>
-        <h4>Student Information</h4>
-        <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
-        <p><strong>Student ID:</strong> @Model.StudentID</p>
-        <p><strong>Department:</strong> @Model.Department</p>
-        <p><strong>Email:</strong> @Model.Email</p>
-        <p><strong>Enrollment Date:</strong> @Model.EnrollmentDate.ToString("d")</p>
-        <hr />
-        
-        @if (Model.Advisor != null)
-        {
-            <h4>Advisor Information</h4>
-            <p><strong>Name:</strong> @Model.Advisor.FullName</p>
-            <p><strong>Department:</strong> @Model.Advisor.Department</p>
-            <p><strong>Email:</strong> @Model.Advisor.Email</p>
-            <hr />
-        }
-        else
-        {
-            <p class="text-danger">Advisor information not available.</p>
-            <hr />
-        }
-    </div>
-    <a href="@Url.Action("SelectCourses", "Student")" class="back-link">Select Courses</a>
-    @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
-    {
-        <div class="alert alert-warning">
-            No available courses for selection.
-        </div>
-    }
-    else
-    {
+
+    <a href="@Url.Action("CourseSelection", "Student")" class="back-link">Back</a>
+   
         <div class="table-container">
-            <form method="post" asp-action="SubmitCourseSelection" asp-controller="Students">
+            <form method="post" asp-action="SubmitSelectedCourses" asp-controller="Students">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -106,12 +74,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var selection in Model.StudentCourseSelections)
+                        @foreach (var selection in Model)
                         {
                             <tr>
-                                <td>@selection.Course.CourseName</td>
-                                <td>@(selection.Course.IsMandatory ? "Mandatory" : "Elective")</td>
-                                <td>@selection.Course.Credit</td>
+                                <td>@selection.CourseName</td>
+                                <td>@(selection.IsMandatory ? "Mandatory" : "Elective")</td>
+                                <td>@selection.Credit</td>
                                 <td>
                                     <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
                                 </td>
@@ -124,5 +92,4 @@
                 </div>
             </form>
         </div>
-    }
 </div>

@@ -15,11 +15,46 @@ namespace SmartCourseSelectorWeb.Controllers
             _context = context;
         }
 
+        [HttpGet("SelectCourses")]
+        public IActionResult SelectCourses()
+        {
+            // Tüm dersleri getiriyoruz
+            var courses = _context.Courses.ToList();
+            return View(courses);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SubmitSelectedCourses(int studentId, List<int> selectedCourses)
+        {
+            // Öğrencinin daha önce seçtiği dersleri sil (isteğe bağlı)
+            var existingSelections = await _context.StudentCourseSelections
+                .Where(scs => scs.StudentID == studentId)
+                .ToListAsync();
+
+            _context.StudentCourseSelections.RemoveRange(existingSelections);
+
+            // Yeni seçilen dersleri ekleyelim
+            foreach (var courseId in selectedCourses)
+            {
+                var courseSelection = new StudentCourseSelection
+                {
+                    StudentID = studentId,
+                    CourseID = courseId
+                };
+
+                _context.StudentCourseSelections.Add(courseSelection);
+            }
+
+            // Değişiklikleri kaydet
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Home");  // Ana sayfaya yönlendirme
+        }
+
         [HttpGet("CourseSelection")]
         public async Task<IActionResult> CourseSelection(int id)
         {
            
-
+            var courses = _context.Courses.ToList();
             var student = await _context.Students
                                          .Include(s => s.StudentCourseSelections)
                                              .ThenInclude(sc => sc.Course)
