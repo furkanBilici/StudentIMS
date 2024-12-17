@@ -1,7 +1,11 @@
-﻿namespace SmartCourseSelectorWeb.Models
+﻿
+using System.ComponentModel.DataAnnotations;
+
+namespace SmartCourseSelectorWeb.Models
 {
     public class Course
     {
+        [Key]
         public int CourseID { get; set; }
         public string CourseCode { get; set; }
         public string CourseName { get; set; }
