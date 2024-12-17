@@ -59,7 +59,7 @@
             background-color: #0056b3;
         }
 </style>
-
+<a href="https://localhost:7199/Account/LoginUser" class="back-link">Logout</a>
 <div class="container content-container">
     <div class="student-info">
         <h2>Course Selection</h2>
@@ -70,7 +70,7 @@
         <p><strong>Email:</strong> @Model.Email</p>
         <p><strong>Enrollment Date:</strong> @Model.EnrollmentDate.ToString("d")</p>
         <hr />
-
+        
         @if (Model.Advisor != null)
         {
             <h4>Advisor Information</h4>
