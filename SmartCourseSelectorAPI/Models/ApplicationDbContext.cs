@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StudentIMS.Models;
 
 namespace SmartCourseSelectorWeb.Models
 {
@@ -12,6 +13,7 @@ namespace SmartCourseSelectorWeb.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<StudentCourseSelection> StudentCourseSelections { get; set; }
         public DbSet<Transcript> Transcripts { get; set; }
+        public DbSet<CourseQuota> CourseQuotas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -21,12 +23,33 @@ namespace SmartCourseSelectorWeb.Models
             {
                 entity.HasKey(e => e.SelectionID); 
                 entity.HasOne(e => e.Student)
-                      .WithMany(s => s.StudentCourseSelections)
-                      .HasForeignKey(e => e.StudentID);
+                     .WithMany(s => s.StudentCourseSelections)
+                     .HasForeignKey(e => e.StudentID);
 
                 entity.HasOne(e => e.Course)
-                      .WithMany(c => c.StudentCourseSelections)
-                      .HasForeignKey(e => e.CourseID);
+                     .WithMany(c => c.StudentCourseSelections)
+                     .HasForeignKey(e => e.CourseID);
+
+                modelBuilder.Entity<Student>()
+                    .HasOne(s => s.Advisor)
+                    .WithMany(a => a.Students)
+                    .HasForeignKey(s => s.AdvisorID)
+                    .OnDelete(DeleteBehavior.Restrict);
+                modelBuilder.Entity<Advisor>()
+                    .HasMany(a => a.Students)
+                    .WithOne(s => s.Advisor)
+                    .HasForeignKey(s => s.AdvisorID)
+                    .OnDelete(DeleteBehavior.Restrict);
+                modelBuilder.Entity<Student>()
+                    .HasMany(s => s.StudentCourseSelections)
+                    .WithOne(scs => scs.Student)
+                    .HasForeignKey(scs => scs.StudentID)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                modelBuilder.Entity<CourseQuota>()
+                    .HasOne(cq => cq.Course)
+                    .WithOne()
+                    .HasForeignKey<CourseQuota>(cq => cq.CourseId);
             });
         }
     }
