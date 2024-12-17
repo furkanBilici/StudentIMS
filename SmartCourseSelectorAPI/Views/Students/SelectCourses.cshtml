@@ -4,7 +4,7 @@
     ViewData["Title"] = "Course Selection";
 }
 
-<link href="~/css/course-selection.css" rel="stylesheet" />
+<link href="~/css/CoursesSelection.css" rel="stylesheet" />
 
 <style>
     .content-container {
@@ -32,7 +32,7 @@
         }
 
         table th {
-            background-color: #1af4aa;
+            background-color: yellowgreen;
             color: #333;
             font-weight: bold;
         }
@@ -46,7 +46,7 @@
         }
 
     .btn-primary {
-        background-color: #007bff;
+        background-color: yellowgreen;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -56,11 +56,11 @@
     }
 
         .btn-primary:hover {
-            background-color: #0056b3;
+            background-color: yellowgreen;
         }
 </style>
 
-    <a href="@Url.Action("CourseSelection", "Student")" class="back-link">Back</a>
+    <a href="@Url.Action("CourseSelection", "Students")" class="back-link">Back</a>
    
         <div class="table-container">
             <form method="post" asp-action="SubmitSelectedCourses" asp-controller="Students">
@@ -78,7 +78,7 @@
                         {
                             <tr>
                                 <td>@selection.CourseName</td>
-                                <td>@(selection.IsMandatory ? "Mandatory" : "Elective")</td>
+                                <td>@(selection.IsMandatory ? "1" : "0")</td>
                                 <td>@selection.Credit</td>
                                 <td>
                                     <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />

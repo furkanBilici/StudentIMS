@@ -22,7 +22,7 @@ namespace SmartCourseSelectorWeb.Controllers
             var courses = _context.Courses.ToList();
             return View(courses);
         }
-        [HttpPost]
+        [HttpPost("SubmitSelectedCourses")]
         public async Task<IActionResult> SubmitSelectedCourses(int studentId, List<int> selectedCourses)
         {
             // Öğrencinin daha önce seçtiği dersleri sil (isteğe bağlı)
@@ -54,7 +54,7 @@ namespace SmartCourseSelectorWeb.Controllers
         public async Task<IActionResult> CourseSelection(int id)
         {
            
-            var courses = _context.Courses.ToList();
+           
             var student = await _context.Students
                                          .Include(s => s.StudentCourseSelections)
                                              .ThenInclude(sc => sc.Course)
