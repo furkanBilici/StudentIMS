@@ -27,7 +27,7 @@
 	.role-selection {
 		display: flex;
 		justify-content: center;
-		gap: 30px; /* Increased gap between roles */
+		gap: 45px; /* Increased gap between roles */
 		margin-bottom: 30px; /* Added extra margin */
 	}
 
@@ -46,32 +46,39 @@
 		}
 
 		.role-selection label input:checked + img {
-			border: 3px solid #007bff; /* Increased border thickness */
-			border-radius: 50%;
+			border: 6px solid green; /* Increased border thickness */
+			border-radius: 10%;
 		}
 
+		h2	 {
+		margin-bottom: 20px;
+		font-size: 1.9rem;
+		color: black;
+		font-weight: bold;
+	}
+
 	.form-group {
-		margin-bottom: 20px; /* Increased spacing between input fields */
+		margin-bottom: 20px;
 	}
 
 	button {
-		font-size: 1.2rem; /* Increased button font size */
-		padding: 12px; /* Increased padding for better visibility */
+		font-size: 1.2rem;
+		padding: 12px; 
 	}
 </style>
 
 <div class="login-card">
-	<h2>Login</h2>
+	<h2>KTU BYS</h2>
 	<form asp-action="LoginUser" method="post" id="loginForm">
 		<div class="role-selection">
 			<label>
-				<input asp-for="Role" type="radio" value="Student" checked />
-				<img src="~/images/student.png" alt="Student" />
+				<input asp-for="Role" type="radio" value="Student"/>
+				<img src="~/images/Students.png" alt="Student" />
 				<div>Student</div>
 			</label>
 			<label>
 				<input asp-for="Role" type="radio" value="Advisor" />
-				<img src="~/images/advisor.png" alt="Advisor" />
+				<img src="~/images/Advisors.png" alt="Advisor" />
 				<div>Advisor</div>
 			</label>
 		</div>

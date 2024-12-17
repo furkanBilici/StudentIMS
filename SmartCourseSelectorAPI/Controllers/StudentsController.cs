@@ -19,11 +19,11 @@ namespace SmartCourseSelectorWeb.Controllers
         public async Task<IActionResult> CourseSelection(int id)
         {
            
-            // Öğrenci, ders seçimleri ve danışmanı al
+
             var student = await _context.Students
                                          .Include(s => s.StudentCourseSelections)
                                              .ThenInclude(sc => sc.Course)
-                                         .Include(s => s.Advisor) // Advisor bilgisi dahil edildi
+                                         .Include(s => s.Advisor) 
                                          .FirstOrDefaultAsync(s => s.StudentID == id);
 
 
