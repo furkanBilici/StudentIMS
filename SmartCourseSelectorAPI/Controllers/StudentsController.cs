@@ -23,21 +23,20 @@ namespace SmartCourseSelectorWeb.Controllers
             return View(courses);
         }
         [HttpPost("SubmitSelectedCourses")]
-        public async Task<IActionResult> SubmitSelectedCourses(int studentId, List<int> selectedCourses)
+        public async Task<IActionResult> SubmitSelectedCourses(int id, List<int> selectedCourses)
         {
-            // Öğrencinin daha önce seçtiği dersleri sil (isteğe bağlı)
-            var existingSelections = await _context.StudentCourseSelections
-                .Where(scs => scs.StudentID == studentId)
-                .ToListAsync();
-
-            _context.StudentCourseSelections.RemoveRange(existingSelections);
-
+            
+            var student = await _context.Students
+                                         .Include(s => s.StudentCourseSelections)
+                                             .ThenInclude(sc => sc.Course)
+                                         .Include(s => s.Advisor)
+                                         .FirstOrDefaultAsync(s => s.StudentID == id);
             // Yeni seçilen dersleri ekleyelim
             foreach (var courseId in selectedCourses)
             {
                 var courseSelection = new StudentCourseSelection
                 {
-                    StudentID = studentId,
+                    StudentID = id,
                     CourseID = courseId
                 };
 
@@ -46,8 +45,10 @@ namespace SmartCourseSelectorWeb.Controllers
 
             // Değişiklikleri kaydet
             await _context.SaveChangesAsync();
+            TempData["SuccessMessage"] = "Selection completed successfully!";
 
-            return RedirectToAction("Index", "Home");  // Ana sayfaya yönlendirme
+            // Ana sayfaya yönlendirme
+            return NoContent();
         }
 
         [HttpGet("CourseSelection")]
@@ -72,6 +73,7 @@ namespace SmartCourseSelectorWeb.Controllers
             // Öğrenci modelini View'a gönderin
             return View(student); // Student modelini gönderiyoruz
         }
+        
 
 
         // GET: api/Students
