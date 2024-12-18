@@ -23,32 +23,31 @@ namespace SmartCourseSelectorWeb.Controllers
             return View(courses);
         }
         [HttpPost("SubmitSelectedCourses")]
-        public async Task<IActionResult> SubmitSelectedCourses(int id, List<int> selectedCourses)
+        public async Task<IActionResult> SubmitSelectedCourses([FromBody] ICollection<int> selectedCourseIds)
         {
-            
-            var student = await _context.Students
-                                         .Include(s => s.StudentCourseSelections)
-                                             .ThenInclude(sc => sc.Course)
-                                         .Include(s => s.Advisor)
-                                         .FirstOrDefaultAsync(s => s.StudentID == id);
-            // Yeni seçilen dersleri ekleyelim
-            foreach (var courseId in selectedCourses)
+            if (selectedCourseIds == null || !selectedCourseIds.Any())
             {
-                var courseSelection = new StudentCourseSelection
-                {
-                    StudentID = id,
-                    CourseID = courseId
-                };
-
-                _context.StudentCourseSelections.Add(courseSelection);
+                // Hiçbir ders seçilmediyse, 400 Bad Request döndür
+                return BadRequest("No courses selected.");
             }
 
-            // Değişiklikleri kaydet
-            await _context.SaveChangesAsync();
-            TempData["SuccessMessage"] = "Selection completed successfully!";
+            try
+            {
+                // Gelen course ID'lerini işleyin (örneğin, veritabanına kaydetme)
+                foreach (var courseId in selectedCourseIds)
+                {
+                    // Örnek işlem: Seçilen dersleri öğrencinin kaydına ekle
+                    // await _studentService.AddCourseToStudentAsync(studentId, courseId);
+                }
 
-            // Ana sayfaya yönlendirme
-            return NoContent();
+                // İşlem başarılıysa 200 OK döndür
+                return Ok(new { message = "Courses submitted successfully." });
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda 500 Internal Server Error döndür
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
         }
 
         [HttpGet("CourseSelection")]

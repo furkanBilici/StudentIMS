@@ -34,7 +34,43 @@
 
 <script>
     document.getElementById("form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Varsayılan form gönderimini engelle
 
+        // Seçilen derslerin ID'lerini al
+        const selectedCourseIds = Array.from(document.querySelectorAll("input[name='SelectedCourseIds']:checked"))
+            .map(checkbox => checkbox.value);
+
+        // Eğer hiçbir ders seçilmemişse bildirim göster ve işlemi durdur
+        if (selectedCourseIds.length === 0) {
+            showNotification("No courses selected.", "error");
+            return;
+        }
+
+        // AJAX isteği gönder
+        fetch("https://localhost:7199/api/Students/SubmitSelectedCourses", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ SelectedCourseIds: selectedCourseIds })
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("An error occurred while submitting the courses.");
+            }
+        })
+        .then(data => {
+            showNotification("Courses submitted successfully!", "success");
+        })
+        .catch(error => {
+            console.error(error);
+            showNotification("Failed to submit courses.", "error");
+        });
+    });
+
+    function showNotification(message, type) {
         // Daha önce oluşturulan bildirimi sil
         const existingNotification = document.querySelector(".notification");
         if (existingNotification) {
@@ -43,19 +79,20 @@
 
         // Bildirimi oluştur
         const notification = document.createElement("div");
-        notification.className = "notification";
+        notification.className = `notification ${type}`;
 
         // Mesajı ekle
-        const message = document.createElement("span");
-        message.className = "message";
-        message.textContent = "Request Sent"; // Mesaj
-        notification.appendChild(message);
+        const messageSpan = document.createElement("span");
+        messageSpan.className = "message";
+        messageSpan.textContent = message;
+        notification.appendChild(messageSpan);
 
         // Kapatma butonu oluştur
         const closeButton = document.createElement("button");
-        closeButton.textContent = "X";
-        closeButton.style.marginLeft = "10px";
-        closeButton.style.border = "none";
+        closeButton.textContent = "close";
+        closeButton.style.marginLeft = "5px";
+        closeButton.style.marginTop = "5px";
+        closeButton.style.border = "3px";
         closeButton.style.background = "red";
         closeButton.style.color = "white";
         closeButton.style.padding = "5px 10px";
@@ -84,5 +121,5 @@
         notification.style.zIndex = "1000";
 
         cardContainer.appendChild(notification);
-    });
+    }
 </script>
