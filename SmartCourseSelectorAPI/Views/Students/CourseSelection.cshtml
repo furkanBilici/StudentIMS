@@ -85,7 +85,8 @@
             <hr />
         }
     </div>
-    <a href="@Url.Action("SelectCourses", "Students")" class="back-link">Select Courses</a>
+    <button onclick="redirectToSelectCourses()">Select Courses</button>>
+   
     @if (Model.StudentCourseSelections == null || !Model.StudentCourseSelections.Any())
     {
         <div class="alert alert-warning">
@@ -125,4 +126,20 @@
             </form>
         </div>
     }<a href="https://localhost:7199/Account/LoginUser" style="color:darkred" class="back-link">Logout</a>
+    
+
+
 </div>
+<script>
+       function redirectToSelectCourses() {
+        // @Model.StudentID'yi doğru şekilde yerleştiriyoruz
+        const studentId = '@Model.StudentID'; // Razor ifadesi burada çalışır
+
+        // URL'yi oluşturuyoruz
+        const url = `/api/StudentController/SelectCourses?StudentId=${encodeURIComponent(studentId)}`;
+
+        // Yönlendirme işlemi
+        window.location.href = url;
+    }
+</script>
+<div>Student ID: @Model.StudentID</div>
