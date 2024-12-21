@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SmartCourseSelectorWeb.Models;
 using StudentIMS.Models;
+using System;
 
 namespace SmartCourseSelectorWeb.Controllers
 {
@@ -46,25 +47,59 @@ namespace SmartCourseSelectorWeb.Controllers
         }
 
 
-
         [HttpPost("SubmitSelectedCourses")]
         public async Task<IActionResult> SubmitSelectedCourses([FromBody] SubmitCoursesRequest request)
         {
-           
-
             if (request == null || request.SelectedCourseIds == null || !request.SelectedCourseIds.Any())
             {
                 return BadRequest("No courses selected.");
             }
-            // İstekteki veriyi işleyin
-            foreach (var courseId in request.SelectedCourseIds)
-            {
-                // Örnek: Veritabanına kayıt işlemi
-                Console.WriteLine($"Student {request.StudentId} selected course {courseId}");
-            }
 
-            return Ok(new { Message = "Courses submitted successfully!" });
+            try
+            {
+                // Öğrenciye ait mevcut kayıtları kontrol et ve sil
+                var existingRecords = _context.UnapprovedSelections
+                    .Where(x => x.StudentID == request.StudentId)
+                    .ToList();
+
+                if (existingRecords.Any())
+                {
+                    _context.UnapprovedSelections.RemoveRange(existingRecords);
+                }
+
+                // Yeni kayıtları ekle
+                int maxId = _context.UnapprovedSelections.Any()
+                    ? _context.UnapprovedSelections.Max(x => x.ID)
+                    : 0;
+
+                foreach (var courseId in request.SelectedCourseIds)
+                {
+                    maxId++; // Yeni ID'yi belirle
+
+                    var unapprovedSelection = new UnapprovedSelections
+                    {
+                        ID = maxId,
+                        StudentID = request.StudentId,
+                        CourseID = courseId
+                    };
+
+                    _context.UnapprovedSelections.Add(unapprovedSelection);
+                }
+
+                // Değişiklikleri kaydet
+                await _context.SaveChangesAsync();
+
+                return Ok(new { Message = "Courses updated successfully!" });
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda geri bildirim ver
+                return StatusCode(500, new { Message = "An error occurred while updating courses.", Details = ex.Message });
+            }
         }
+
+
+
 
         [HttpGet("CourseSelection")]
         public async Task<IActionResult> CourseSelection(int id)

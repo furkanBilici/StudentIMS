@@ -12,8 +12,8 @@ using SmartCourseSelectorWeb.Models;
 namespace StudentIMS.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241217081355_migration_170")]
-    partial class migration_170
+    [Migration("20241221083005_SqlMigration")]
+    partial class SqlMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -217,11 +217,47 @@ namespace StudentIMS.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("StudentIMS.Models.CourseQuota", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quota")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RemainingQuota")
+                        .HasColumnType("int");
+
+                    b.HasKey("CourseId");
+
+                    b.ToTable("CourseQuotas");
+                });
+
+            modelBuilder.Entity("StudentIMS.Models.UnapprovedSelections", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("CourseID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("UnapprovedSelections", (string)null);
+                });
+
             modelBuilder.Entity("SmartCourseSelectorWeb.Models.Student", b =>
                 {
                     b.HasOne("SmartCourseSelectorWeb.Models.Advisor", "Advisor")
                         .WithMany("Students")
-                        .HasForeignKey("AdvisorID");
+                        .HasForeignKey("AdvisorID")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Advisor");
                 });
@@ -262,6 +298,17 @@ namespace StudentIMS.Migrations
                     b.Navigation("Course");
 
                     b.Navigation("Student");
+                });
+
+            modelBuilder.Entity("StudentIMS.Models.CourseQuota", b =>
+                {
+                    b.HasOne("SmartCourseSelectorWeb.Models.Course", "Course")
+                        .WithOne()
+                        .HasForeignKey("StudentIMS.Models.CourseQuota", "CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
                 });
 
             modelBuilder.Entity("SmartCourseSelectorWeb.Models.Advisor", b =>
