@@ -99,29 +99,29 @@ namespace SmartCourseSelectorWeb.Controllers
         }
 
 
-
-
         [HttpGet("CourseSelection")]
         public async Task<IActionResult> CourseSelection(int id)
         {
-            var student = await _context.Students
-                                         .Include(s => s.StudentCourseSelections)
-                                             .ThenInclude(sc => sc.Course)
-                                         .Include(s => s.Advisor) 
-                                         .FirstOrDefaultAsync(s => s.StudentID == id);
+           
+                var student = await _context.Students
+                                             .Include(s => s.StudentCourseSelections) // Seçilen dersler
+                                                 .ThenInclude(sc => sc.Course)       // Ders bilgileri
+                                             .Include(s => s.Advisor)                // Danışman bilgisi
+                                             .Include(s => s.UnapprovedSelections)   // Onaylanmamış dersler
+                                                 .ThenInclude(us => us.Course)      // Ders bilgileri
+                                             .FirstOrDefaultAsync(s => s.StudentID == id);
 
+                // Öğrenci bulunamadıysa hata mesajı gönder
+                if (student == null)
+                {
+                    return NotFound("Student not found.");
+                }
 
-            // Eğer öğrenci bulunamazsa hata mesajı gönderin
-            if (student == null)
-            {
-                ViewBag.Message = "Student not found.";
-                return View(); // Boş bir View döner
-            }
-
-            // Öğrenci modelini View'a gönderin
-            return View(student); // Student modelini gönderiyoruz
+                // Öğrenci modelini View'a gönder
+                return View(student);
+            
         }
-        
+
 
 
         // GET: api/Students
