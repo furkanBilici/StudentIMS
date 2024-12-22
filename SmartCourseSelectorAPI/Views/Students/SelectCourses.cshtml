@@ -1,5 +1,4 @@
 ﻿@model StudentIMS.Models.StudentAndCourse
-
 <div class="table-container">
     <!-- Öğrenci bilgisini saklayan gizli alan -->
     <div id="studentInfo" data-student-id="@Model.Student.StudentID"></div>
@@ -8,22 +7,22 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Course Name</th>
-                    <th>Mandatory</th>
-                    <th>Credit</th>
-                    <th>Action</th>
+                    <th style="background-color: yellowgreen; color: white; text-align: center;">Course Name</th>
+                    <th style="background-color: yellowgreen; color: white; text-align: center;">Mandatory</th>
+                    <th style="background-color: yellowgreen; color: white; text-align: center;">Credit</th>
+                    <th style="background-color: yellowgreen; color: white; text-align: center;">Action</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var selection in Model.Course)
                 {
-                    @if (!@selection.IsMandatory && selection.Quota>0)
+                    @if (!@selection.IsMandatory && selection.Quota > 0)
                     {
                         <tr>
-                            <td>@selection.CourseName</td>
-                            <td>@(selection.IsMandatory ? "Mandatory" : "Elective")</td>
-                            <td>@selection.Credit</td>
-                            <td>
+                            <td style="text-align: center;">@selection.CourseName</td>
+                            <td style="text-align: center;">@(selection.IsMandatory ? "Mandatory" : "Elective")</td>
+                            <td style="text-align: center;">@selection.Credit</td>
+                            <td style="text-align: center;">
                                 <input type="checkbox" name="SelectedCourseIds" value="@selection.CourseID" />
                             </td>
                         </tr>
@@ -31,12 +30,18 @@
                 }
             </tbody>
         </table>
-        <div class="form-group">
-            <button type="submit" id="submitBtn" class="btn btn-primary">Submit Selection</button>
+        <div class="form-group" style="text-align: center; margin-top: 20px;">
+            <button type="submit" id="submitBtn" class="btn btn-primary" style="background-color: #007bff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                Submit Selection
+            </button>
         </div>
     </form>
 </div>
-<button onclick="window.location.href='@Url.Action("CourseSelection", "Students", new { id = Model.Student.StudentID })'" class="back-link">Back</button>
+<button onclick="window.location.href='@Url.Action("CourseSelection", "Students", new { id = Model.Student.StudentID })'"
+        class="back-link btn btn-secondary"
+        style="margin-top: 20px; display: block; margin-left: auto; margin-right: auto; background-color: darkred; border: none; padding: 10px 20px; border-radius: 5px; color: white; cursor: pointer;">
+    Back
+</button>
 
 <div id="cardContainer"></div>
 
