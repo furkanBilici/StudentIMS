@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.FlowAnalysis.DataFlow;
 using Microsoft.EntityFrameworkCore;
 using SmartCourseSelectorWeb.Models;
 using StudentIMS.Models;
@@ -31,7 +32,11 @@ namespace SmartCourseSelectorWeb.Controllers
             return View(advisor);
         }
         [HttpPost("ApproveStudentsCourses")]
-        public IActionResult ApproveStudentsCourses([FromForm] List<int> SelectedCourseIds, [FromForm] List<string> UncheckedCourseIds)
+        public IActionResult ApproveStudentsCourses(
+            [FromForm] List<int> SelectedCourseIds,
+            [FromForm] List<string> UncheckedCourseIds,
+            [FromForm] int id
+            )
         {
             if (SelectedCourseIds == null || !SelectedCourseIds.Any())
             {
@@ -76,12 +81,14 @@ namespace SmartCourseSelectorWeb.Controllers
                 {
                     _context.UnapprovedSelections.Remove(unapprovedCourse); // Bu kaydı sil
                 }
+                
             }
 
             // Veritabanı değişikliklerini kaydet
             _context.SaveChanges();
 
-            return Ok(new { Message = "Courses approved successfully!" });
+
+            return RedirectToAction("ApproveCourses", "Advisors",new { id = id });
         }
 
 

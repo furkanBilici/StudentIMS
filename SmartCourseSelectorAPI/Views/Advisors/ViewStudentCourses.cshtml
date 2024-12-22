@@ -41,6 +41,7 @@
 
         <!-- Form ile checkbox seçimini gönder -->
         <form asp-action="ApproveStudentsCourses" asp-controller="Advisors" method="post" id="approveForm">
+            <input type="hidden" name="id" value="@Model.AdvisorID" />
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -77,6 +78,7 @@
                 <button type="submit" id="submitBtn" class="btn btn-primary">Approve</button>
             </div>
         </form>
+        <button onclick="window.location.href='@Url.Action("ApproveCourses", "Advisors", new { id = Model.AdvisorID })'" class="back-link">Back</button>
 
         <!-- Success Message -->
         <div id="successMessage" class="success-message hidden">
@@ -86,16 +88,7 @@
 </div>
 
 <script>
-    // Success message handling
-    function showSuccessMessage() {
-        var successMessage = document.getElementById("successMessage");
-        successMessage.classList.remove("hidden");
-
-        // Hide the success message after 3 seconds
-        setTimeout(function() {
-            successMessage.classList.add("hidden");
-        }, 3000);
-    }
+   
 
     // Modify course IDs before submission and handle IsApproved for unchecked courses
     document.getElementById("approveForm").onsubmit = function (event) {
@@ -121,10 +114,26 @@
     }
 
     // If the page reloads with success, show the success message
-    @if (TempData["Success"] != null)
-    {
-        <text>
-                    showSuccessMessage();
-        </text>
+   
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Eğer success mesajı varsa göster
+        var successMessage = "@TempData["Success"]";
+        if (successMessage) {
+            showSuccessMessage();
+        }
+    });
+
+    function showSuccessMessage() {
+        var successMessageElement = document.getElementById("successMessage");
+        successMessageElement.classList.remove("hidden");
+        successMessageElement.textContent = "@TempData["Success"]";
+
+        // Hide the success message after 3 seconds
+        setTimeout(function () {
+            successMessageElement.classList.add("hidden");
+        }, 3000);
     }
+    
 </script>
