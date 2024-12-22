@@ -17,7 +17,7 @@
             <tbody>
                 @foreach (var selection in Model.Course)
                 {
-                    @if (!@selection.IsMandatory)
+                    @if (!@selection.IsMandatory && selection.Quota>0)
                     {
                         <tr>
                             <td>@selection.CourseName</td>
