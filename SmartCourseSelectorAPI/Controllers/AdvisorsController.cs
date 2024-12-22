@@ -195,3 +195,8 @@ namespace SmartCourseSelectorWeb.Controllers
         }
     }
 }
+
+
+
+
+//furkan bilici tarafından yapılmıştır
