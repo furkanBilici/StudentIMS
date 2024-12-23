@@ -13,6 +13,7 @@ namespace StudentIMS.Controllers
         {
             return View("AdminPanel");
         }
+      
     }
 }
 
